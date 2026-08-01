@@ -17,7 +17,7 @@ const Profile = () => {
   const fetchProfile = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:3000/api/foodpartner/${id}`
+        `${import.meta.env.VITE_API_URL}/api/foodpartner/${id}`
       );
 
       setProfile(res.data.foodpartner);
