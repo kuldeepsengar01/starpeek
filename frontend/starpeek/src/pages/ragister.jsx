@@ -16,7 +16,7 @@ const Register = () => {
 
     try {
       const response = await axios.post(
-        `${import.meta.env.VITE_API_URL}/api/user/register`,
+        "https://starpeek.onrender.com/api/user/register",
         {
           FullName,
           Email,
