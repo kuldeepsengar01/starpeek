@@ -76,8 +76,6 @@ const CreateFood = () => {
         }
       );
 
-      console.log(response.data);
-
       alert("Food Uploaded Successfully");
 
       setFoodName("");
@@ -91,7 +89,6 @@ const CreateFood = () => {
 
       navigate("/");
     } catch (err) {
-      console.error(err);
 
       alert(
         err.response?.data?.message ||

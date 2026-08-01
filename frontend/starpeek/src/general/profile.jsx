@@ -20,15 +20,11 @@ const Profile = () => {
         `http://localhost:3000/api/foodpartner/${id}`
       );
 
-      console.log("Profile API Response:", res.data);
-
       setProfile(res.data.foodpartner);
       setFoods(res.data.foods);
     } catch (err) {
-      console.log(err);
 
       if (err.response) {
-        console.log(err.response.data);
       }
     } finally {
       setLoading(false);
@@ -173,7 +169,7 @@ const Profile = () => {
                 >
 
                   <video
-                    src={food.Image}
+                    src={food.Video}
                     controls
                     className="w-full h-72 object-cover"
                   />

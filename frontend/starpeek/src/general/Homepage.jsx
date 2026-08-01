@@ -303,7 +303,7 @@ videoRefs.current[index]=el
 
 }
 
-src={item.Image}
+src={item.Video}
 className="
 w-full
 max-w-md

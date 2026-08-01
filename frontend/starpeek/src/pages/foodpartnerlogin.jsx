@@ -23,12 +23,10 @@ const FoodPartnerLogin = () => {
         }
       );
 
-      console.log(response.data);
       alert("Login Successfully");
 
       navigate("/createfood");
     } catch (err) {
-      console.log(err.response?.data);
       alert(err.response?.data?.message || "Invalid Email or Password");
     }
   };
