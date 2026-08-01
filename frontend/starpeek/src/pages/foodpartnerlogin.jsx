@@ -13,7 +13,7 @@ const FoodPartnerLogin = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/foodpartner/login",
+        `${import.meta.env.VITE_API_URL}/api/foodpartner/login`,
         {
           Email,
           Password,
