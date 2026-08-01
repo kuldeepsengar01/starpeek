@@ -38,7 +38,7 @@ const HomePage = () => {
     try{
 
       const res = await axios.get(
-        "http://localhost:3000/api/food/fooditems",
+        `${import.meta.env.VITE_API_URL}/api/food/fooditems`,
         {
           withCredentials:true
         }
@@ -165,7 +165,7 @@ const HomePage = () => {
 
       const res = await axios.post(
 
-        "http://localhost:3000/api/food/like",
+        `${import.meta.env.VITE_API_URL}/api/food/like`,
 
         {
           foodId
@@ -242,7 +242,7 @@ const HomePage = () => {
   const handleSave = async(foodId)=>{
     try{
       const res = await axios.post(
-        "http://localhost:3000/api/food/save",
+        `${import.meta.env.VITE_API_URL}/api/food/save`,
         {
           foodId
         },
