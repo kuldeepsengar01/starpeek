@@ -24,7 +24,6 @@ const Login = () => {
     alert('Login Successfully');
     navigate('/')
   }catch(err){
-    console.log(err.response?.data);
      alert('Please Enter a valid details');
   }
 };

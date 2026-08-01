@@ -45,8 +45,6 @@ const HomePage = () => {
       );
 
 
-      console.log(res.data);
-
 
       setVideos(
         res.data.fooditems || []
@@ -176,9 +174,6 @@ const HomePage = () => {
         }
 
       );
-
-
-      console.log(res.data);
 
 
 
