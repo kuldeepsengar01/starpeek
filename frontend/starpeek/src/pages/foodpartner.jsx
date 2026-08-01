@@ -33,7 +33,7 @@ const FoodPartner = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/foodpartner/register",
+        `${import.meta.env.VITE_API_URL}/api/foodpartner/register`,
         formData,
         {
           withCredentials: true,
