@@ -33,19 +33,16 @@ const FoodPartner = () => {
 
     try {
       const response = await axios.post(
-        `${import.meta.env.VITE_API_URL}/api/foodpartner/register`,
+        "https://starpeek.onrender.com/api/foodpartner/register",
         formData,
         {
           withCredentials: true,
         }
       );
-
-      console.log(response.data);
       alert("Food Partner Registered Successfully");
 
       navigate("/createfood");
     } catch (err) {
-      console.log(err.response?.data);
       alert(err.response?.data?.message || "Registration Failed");
     }
   };

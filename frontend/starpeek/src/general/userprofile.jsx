@@ -37,14 +37,12 @@ try{
 
 
 const res = await axios.get(
-`${import.meta.env.VITE_API_URL}/api/user/profile`,
-{
-withCredentials:true
-}
+  "https://starpeek.onrender.com/api/user/profile",
+  {
+    withCredentials: true
+  }
 );
 
-
-console.log(res.data);
 
 
 setUser(res.data.user);
@@ -53,8 +51,6 @@ setUser(res.data.user);
 
 }
 catch(err){
-
-console.log(err);
 
 }
 finally{

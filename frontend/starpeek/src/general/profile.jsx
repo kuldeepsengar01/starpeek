@@ -17,7 +17,7 @@ const Profile = () => {
   const fetchProfile = async () => {
     try {
       const res = await axios.get(
-        `${import.meta.env.VITE_API_URL}/api/foodpartner/${id}`
+        "https://starpeek.onrender.com/api/foodpartner/${id}"
       );
 
       setProfile(res.data.foodpartner);

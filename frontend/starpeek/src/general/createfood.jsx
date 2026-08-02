@@ -57,7 +57,7 @@ const CreateFood = () => {
       setProgress(0);
 
       const response = await axios.post(
-        `${import.meta.env.VITE_API_URL}/api/food/createfood`,
+        "https://starpeek.onrender.com/api/food/createfood",
         formData,
         {
           withCredentials: true,

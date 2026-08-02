@@ -28,13 +28,10 @@ const Register = () => {
           withCredentials: true,
         }
       );
-
-      console.log(response.data);
       alert("User Registered Successfully");
 
       navigate("/");
     } catch (err) {
-      console.log(err.response?.data || err);
       alert(err.response?.data?.message || "Registration Failed");
     }
   };

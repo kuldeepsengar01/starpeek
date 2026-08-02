@@ -14,7 +14,7 @@ const Login = () => {
     const Email=e.target.Email.value;
     const Password=e.target.Password.value;
   try{
-    const response= await axios.post(`${import.meta.env.VITE_API_URL}/api/user/login`,{
+    const response= await axios.post("https://starpeek.onrender.com/api/user/login",{
       Email,
       Password
     },{

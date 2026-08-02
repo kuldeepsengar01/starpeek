@@ -38,7 +38,7 @@ const HomePage = () => {
     try{
 
       const res = await axios.get(
-        `${import.meta.env.VITE_API_URL}/api/food/fooditems`,
+        "https://starpeek.onrender.com/api/food/fooditems",
         {
           withCredentials:true
         }
@@ -163,7 +163,7 @@ const HomePage = () => {
 
       const res = await axios.post(
 
-        `${import.meta.env.VITE_API_URL}/api/food/like`,
+        "https://starpeek.onrender.com/api/food/like",
 
         {
           foodId
@@ -237,7 +237,7 @@ const HomePage = () => {
   const handleSave = async(foodId)=>{
     try{
       const res = await axios.post(
-        `${import.meta.env.VITE_API_URL}/api/food/save`,
+        "https://starpeek.onrender.com/api/food/save",
         {
           foodId
         },

@@ -13,7 +13,7 @@ const FoodPartnerLogin = () => {
 
     try {
       const response = await axios.post(
-        `${import.meta.env.VITE_API_URL}/api/foodpartner/login`,
+        "https://starpeek.onrender.com/api/foodpartner/login",
         {
           Email,
           Password,
